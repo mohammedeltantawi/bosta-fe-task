@@ -1,0 +1,34 @@
+.pair-title {
+    font-size: 12;
+    color: #4f5665;
+}
+
+.pair-value {
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+}
+
+.cancelled {
+    color: #e30613;
+}
+
+.success {
+    color: #00AD21;
+}
+
+.waiting {
+    color: #FFB12B;
+}
+
+.cancelled-background {
+    background-color: #e30613;
+}
+
+.success-background {
+    background-color: #00AD21;
+}
+
+.waiting-background {
+    background-color: #FFB12B;
+}

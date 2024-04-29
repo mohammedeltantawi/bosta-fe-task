@@ -6,7 +6,7 @@ import PageNotFound from '../pages/_404';
 const MainRouter = () => {
   return (
     <Routes>
-      <Route path={ROUTES_NAMES.SHIPMENT} element={<PackageTracking />} />
+      <Route path={ROUTES_NAMES.SHIPMENT+"/:id"} element={<PackageTracking />} />
       <Route path="*" element={<PageNotFound />} />
     </Routes>
   );

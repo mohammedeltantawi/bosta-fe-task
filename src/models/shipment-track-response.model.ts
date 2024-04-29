@@ -1,16 +1,18 @@
+import { TransitEventsState } from "../enums/transit-events.enum"
+
 interface NextWorkingDayModel {
     dayDate: string,
     dayName: string 
 }
 
 interface CurrentStatusModel {
-    state: string,
+    state: TransitEventsState,
     timestamp: string
 }
 
 interface TransitEventsModel {
-    state: string,
-    timeStamp: string,
+    state: TransitEventsState,
+    timestamp: string,
     hub?: string,
     reason?: string
 }
