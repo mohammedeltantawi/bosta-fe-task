@@ -8,5 +8,18 @@
         "call": "Call",
         "prices": "Prices",
         "main": "Main"
+    },
+    "deliveryTimeCard": {
+        "deliveryAddress": "Deliver address",
+        "address": "Address",
+        "problemQuestion": "Do you have a problem ?!",
+        "reportButtonTitle": "Report a problem"
+    },
+    "shippmentDetails": {
+        "shippmentDetails": "Shippment Details",
+        "branch": "Branch",
+        "date": "Date",
+        "time": "Time",
+        "details": "Details"
     }
 }

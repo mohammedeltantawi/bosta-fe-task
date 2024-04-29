@@ -1,3 +1,4 @@
+import { t } from 'i18next';
 import { ShipmentTrackResponse } from '../../models/shipment-track-response.model';
 import { getDateNumbers, getTime } from '../../services/global-functions';
 
@@ -9,20 +10,20 @@ const ShippmentDetails = ({ shipmentDetails }: TrackerCardProps) => {
   const rowCell= "w-1/4 text-wrap"
   return (
     <div className="flex flex-col gap-4 w-full md:w-2/3">
-      <p>Shippment Details</p>
+      <p>{t('shippmentDetails.shippmentDetails')}</p>
       <div className='flex flex-col border border-solid border-#4f5665  rounded-lg'>
         <div className={`${rowClass} bg TODO`}>
           <p className={rowCell}>
-            Branch
+            {t('shippmentDetails.branch')}
           </p>
           <p className={rowCell}>
-            Date
+            {t('shippmentDetails.date')}
           </p>
           <p className={rowCell}>
-            Time
+            {t('shippmentDetails.time')}
           </p>
           <p className={rowCell}>
-            Details
+            {t('shippmentDetails.details')}
           </p>
         </div>
         {

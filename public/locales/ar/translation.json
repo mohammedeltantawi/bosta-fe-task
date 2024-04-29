@@ -8,5 +8,18 @@
         "call": "كلم المبيعات",
         "prices": "الأسعار",
         "main": "الرئيسية"
+    },
+    "deliveryTimeCard": {
+        "deliveryAddress": "عنوان التسليم",
+        "address": "العنوان",
+        "problemQuestion": "هل يوجد مشكلة في شحنتك ؟!",
+        "reportButtonTitle": "إبلاغ عن مشكلة"
+    },
+    "shippmentDetails": {
+        "shippmentDetails": "تفاصيل الشحنة",
+        "branch": "الفرع",
+        "date": "التاريخ",
+        "time": "الوقت",
+        "details": "تفاصيل"
     }
 }
