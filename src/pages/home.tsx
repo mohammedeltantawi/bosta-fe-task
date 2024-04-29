@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { useQuery } from "react-query";
 import { useParams } from "react-router-dom";
 import Navbar from "../components/navbar/navbar.component";
+import ShippmentDetails from "../components/shippment-details/shippment-details.component";
 import TrackerCard from "../components/tracker-card/tracker-card.component";
 import { TransitEventsState } from "../enums/transit-events.enum";
 import { ShipmentTrackResponse } from "../models/shipment-track-response.model";
@@ -24,6 +25,9 @@ const PackageTracking = () => {
         <div className="w-full justify-center items-center flex flex-col gap-10">
           <Navbar />
           <TrackerCard shipmentDetails={shipmentDetails}/>
+          <div className="w-[95%] md:w-[84%] flex flex-col md:flex-row space-between">
+            <ShippmentDetails shipmentDetails={shipmentDetails}/>
+          </div>
         </div>
       )
   );
