@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { useQuery } from "react-query";
 import { useParams } from "react-router-dom";
+import DeliveryTimeCard from "../components/delivery-time-card/delivery-time-card.component";
 import Navbar from "../components/navbar/navbar.component";
 import ShippmentDetails from "../components/shippment-details/shippment-details.component";
 import TrackerCard from "../components/tracker-card/tracker-card.component";
@@ -25,8 +26,9 @@ const PackageTracking = () => {
         <div className="w-full justify-center items-center flex flex-col gap-10">
           <Navbar />
           <TrackerCard shipmentDetails={shipmentDetails}/>
-          <div className="w-[95%] md:w-[84%] flex flex-col md:flex-row space-between">
+          <div className="w-[95%] md:w-[84%] flex flex-col md:flex-row gap-5">
             <ShippmentDetails shipmentDetails={shipmentDetails}/>
+            <DeliveryTimeCard shipmentDetails={shipmentDetails}/>
           </div>
         </div>
       )
