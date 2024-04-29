@@ -1,0 +1,12 @@
+{
+    "languageButton": {
+        "text": "ENG"
+    },
+    "navbar": {
+        "trackShipment": "تتبع شحنتك",
+        "login": "تسجيل الدخول",
+        "call": "كلم المبيعات",
+        "prices": "الأسعار",
+        "main": "الرئيسية"
+    }
+}

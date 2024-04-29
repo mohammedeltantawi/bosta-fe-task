@@ -5,6 +5,7 @@ import { BrowserRouter } from 'react-router-dom';
 import MainRouter from './routes/router';
 import { QueryClient, QueryClientProvider } from 'react-query';
 import { ReactQueryDevtools } from 'react-query/devtools';
+import './i18n';
 
 export const queryClient = new QueryClient();
 const baseURL = `${process.env.API_URL}`;

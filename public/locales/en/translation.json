@@ -1,0 +1,12 @@
+{
+    "languageButton": {
+        "text": "ع"
+    },
+    "navbar": {
+        "trackShipment": "Track shipment",
+        "login": "Login",
+        "call": "Call",
+        "prices": "Prices",
+        "main": "Main"
+    }
+}
