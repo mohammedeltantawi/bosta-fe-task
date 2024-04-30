@@ -1,3 +1,4 @@
+import { t } from 'i18next';
 import { useEffect, useState } from 'react';
 import { TransitEventsState } from '../../enums/transit-events.enum';
 import { ShipmentTrackResponse } from '../../models/shipment-track-response.model';
@@ -53,7 +54,7 @@ const TrackerCard = ({ shipmentDetails }: TrackerCardProps) => {
         <div className='flex flex-col md:flex-row justify-between gap-4 md:gap-0'>
             <div className='flex flex-col gap-1 md:gap-2'>
                 <p className='pair-title'>
-                    Shipment Number {shipmentDetails.TrackingNumber}  
+                    {t("trackerCard.shipmentNumber")} {shipmentDetails.TrackingNumber}  
                 </p>
                 <p className={`pair-value ${getShipmentDetailsStatusClass()}`}>
                     {shipmentDetails.CurrentStatus.state} 
@@ -62,7 +63,7 @@ const TrackerCard = ({ shipmentDetails }: TrackerCardProps) => {
 
             <div className='flex flex-col gap-1 md:gap-2'>
                 <p className='pair-title'>
-                    Last Update  
+                    {t("trackerCard.lastUpdate")} 
                 </p>
                 <p className='pair-value'>
                     {getDateDayDateTime(shipmentDetails.CurrentStatus.timestamp)} 
@@ -71,7 +72,7 @@ const TrackerCard = ({ shipmentDetails }: TrackerCardProps) => {
 
             <div className='flex flex-col gap-1 md:gap-2'>
                 <p className='pair-title'>
-                    Merchant Name
+                    {t("trackerCard.merchantName")}
                 </p>
                 <p className='pair-value'>
                     {shipmentDetails.provider}
@@ -80,7 +81,7 @@ const TrackerCard = ({ shipmentDetails }: TrackerCardProps) => {
 
             <div className='flex flex-col gap-1 md:gap-2'>
                 <p className='pair-title'>
-                    Delivery Date
+                    {t("trackerCard.deliveryDate")}
                 </p>
                 <p className='pair-value'>
                     {getDateDMY(shipmentDetails.PromisedDate)} 

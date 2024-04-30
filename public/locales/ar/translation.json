@@ -15,11 +15,55 @@
         "problemQuestion": "هل يوجد مشكلة في شحنتك ؟!",
         "reportButtonTitle": "إبلاغ عن مشكلة"
     },
-    "shippmentDetails": {
-        "shippmentDetails": "تفاصيل الشحنة",
+    "shipmentDetails": {
+        "shipmentDetails": "تفاصيل الشحنة",
         "branch": "الفرع",
         "date": "التاريخ",
         "time": "الوقت",
         "details": "تفاصيل"
+    },
+    "monthNames": {
+        "jan": "يناير",
+        "feb": "فبراير",
+        "mar": "مارس",
+        "apr": "أبريل",
+        "may": "مايو",
+        "june": "يونيو",
+        "july": "يوليو",
+        "aug": "أغسطس",
+        "sep": "سبتمبر",
+        "oct": "أكتوبر",
+        "nov": "نوفمبر",
+        "dec": "ديسمبر"
+    },
+    "dayOfWeek": {
+        "sun": "الأحد",
+        "mon": "الاثنين",
+        "tues": "الثلاثاء",
+        "wed": "الأربعاء",
+        "thu": "الخميس",
+        "fri": "الجمعة",
+        "sat": "السبت"
+    },
+    "clock": {
+        "pm": "pm",
+        "am": "am"
+    },
+    "trackerCard": {
+        "shipmentNumber": "رقم الشحنة",
+        "lastUpdate": "آخر تحديث",
+        "merchantName": "اسم التاجر",
+        "deliveryDate": "موعد التسليم خلال"
+    },
+    "transitStatus": {
+        "TICKET_CREATED": "تم إنشاء الشحنة",
+        "PACKAGE_RECEIVED": "تم إستلام الشحنة من التاجر",
+        "IN_TRANSIT": "في الطريق",
+        "NOT_YET_SHIPPED": "لم يتم تسليم الشحنة",
+        "OUT_FOR_DELIVERY": "الشحنة خرجت للتسليم",
+        "WAITING_FOR_CUSTOMER_ACTION": "Waiting for customer action",
+        "DELIVERED": "تم التسليم",
+        "CANCELLED": "تم إلغاء الشحنة",
+        "DELIVERED_TO_SENDER": "Delivered to sender"
     }
 }

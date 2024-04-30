@@ -4,7 +4,7 @@ import { useQuery } from "react-query";
 import { useParams } from "react-router-dom";
 import DeliveryTimeCard from "../components/delivery-time-card/delivery-time-card.component";
 import Navbar from "../components/navbar/navbar.component";
-import ShippmentDetails from "../components/shippment-details/shippment-details.component";
+import ShipmentDetails from "../components/shipment-details/shipment-details.component";
 import TrackerCard from "../components/tracker-card/tracker-card.component";
 import { TransitEventsState } from "../enums/transit-events.enum";
 import { ShipmentTrackResponse } from "../models/shipment-track-response.model";
@@ -28,7 +28,7 @@ const PackageTracking = () => {
           <Navbar />
           <TrackerCard shipmentDetails={shipmentDetails}/>
           <div className="w-[95%] md:w-[84%] flex flex-col md:flex-row gap-5">
-            <ShippmentDetails shipmentDetails={shipmentDetails}/>
+            <ShipmentDetails shipmentDetails={shipmentDetails}/>
             <DeliveryTimeCard shipmentDetails={shipmentDetails}/>
           </div>
         </div>

@@ -5,25 +5,25 @@ import { getDateNumbers, getTime } from '../../services/global-functions';
 interface TrackerCardProps {
     shipmentDetails: ShipmentTrackResponse;
 }
-const ShippmentDetails = ({ shipmentDetails }: TrackerCardProps) => {
+const ShipmentDetails = ({ shipmentDetails }: TrackerCardProps) => {
   const rowClass="flex flex-row bg-#4f5665 h-auto items-center p-5 border-solid border-b border-#4f5665"
   const rowCell= "w-1/4 text-wrap"
   return (
     <div className="flex flex-col gap-4 w-full md:w-2/3">
-      <p>{t('shippmentDetails.shippmentDetails')}</p>
+      <p>{t('shipmentDetails.shipmentDetails')}</p>
       <div className='flex flex-col border border-solid border-#4f5665  rounded-lg'>
         <div className={`${rowClass} bg TODO`}>
           <p className={rowCell}>
-            {t('shippmentDetails.branch')}
+            {t('shipmentDetails.branch')}
           </p>
           <p className={rowCell}>
-            {t('shippmentDetails.date')}
+            {t('shipmentDetails.date')}
           </p>
           <p className={rowCell}>
-            {t('shippmentDetails.time')}
+            {t('shipmentDetails.time')}
           </p>
           <p className={rowCell}>
-            {t('shippmentDetails.details')}
+            {t('shipmentDetails.details')}
           </p>
         </div>
         {
@@ -50,4 +50,4 @@ const ShippmentDetails = ({ shipmentDetails }: TrackerCardProps) => {
   );
 };
 
-export default ShippmentDetails;
+export default ShipmentDetails;
