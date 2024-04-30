@@ -6,23 +6,24 @@ interface TrackerCardProps {
     shipmentDetails: ShipmentTrackResponse;
 }
 const ShipmentDetails = ({ shipmentDetails }: TrackerCardProps) => {
-  const rowClass="flex flex-row bg-#4f5665 h-auto items-center p-5 border-solid border-b border-#4f5665"
+  
+  const rowClass="flex flex-row h-auto items-center p-5 border-solid border-b "
   const rowCell= "w-1/4 text-wrap"
   return (
     <div className="flex flex-col gap-4 w-full md:w-2/3">
-      <p>{t('shipmentDetails.shipmentDetails')}</p>
-      <div className='flex flex-col border border-solid border-#4f5665  rounded-lg'>
-        <div className={`${rowClass} bg TODO`}>
-          <p className={rowCell}>
+      <p className='card-title'>{t('shipmentDetails.shipmentDetails')}</p>
+      <div className='flex flex-col border border-solid   rounded-lg'>
+        <div className={`${rowClass} grey-background`}>
+          <p className={`${rowCell} first-row-text-color`}>
             {t('shipmentDetails.branch')}
           </p>
-          <p className={rowCell}>
+          <p className={`${rowCell} first-row-text-color`}>
             {t('shipmentDetails.date')}
           </p>
-          <p className={rowCell}>
+          <p className={`${rowCell} first-row-text-color`}>
             {t('shipmentDetails.time')}
           </p>
-          <p className={rowCell}>
+          <p className={`${rowCell} first-row-text-color`}>
             {t('shipmentDetails.details')}
           </p>
         </div>
@@ -39,7 +40,7 @@ const ShipmentDetails = ({ shipmentDetails }: TrackerCardProps) => {
               {getTime(event.timestamp)}
             </p>
             <p className={rowCell}>
-              {event.state}
+              {t(`transitStatus.${event.state}`)}
             </p>
           </div>)
          })

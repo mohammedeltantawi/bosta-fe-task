@@ -29,7 +29,7 @@ const Navbar = () => {
 
     const isMobile = width <= 768;
   return (
-    <div className="w-full h-[80px] md:h-[100px] flex flex-row justify-between items-center p-5 md:px-[8%] md:py-10 border-b border-solid border-#4f5665">
+    <div className="w-full h-[80px] md:h-[100px] flex flex-row justify-between items-center p-5 md:px-[8%] md:py-10 border-b border-solid ">
         <div>
             <img src={i18n.language === "en" ? bostaEn : bostaAr} />
         </div>
@@ -52,7 +52,7 @@ const Navbar = () => {
             </p>
             {
                 isMobile ? (
-                    <div className='border border-solid border-#4f5665 w-10 h-10 rounded-lg'>
+                    <div className='border border-solid  w-10 h-10 rounded-lg'>
 
                     </div>
                 ) : (
