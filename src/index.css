@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+	--red-warning: #E30613;
+  --yellow-waiting: #FFB12B;
+  --green-succes: #00AD21;
+  --primary-background: #FFFFFF;
+  --primary-text: #000000;
+  --secondary-background: #FAFAFA;
+  --secondary-text: #4F5665;
+  --primary-border: #4F5665;
+}
 body {
   margin: 0;
   font-family: "Cairo", sans-serif;

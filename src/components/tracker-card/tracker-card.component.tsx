@@ -22,7 +22,7 @@ const TrackerCard = ({ shipmentDetails }: TrackerCardProps) => {
         }
     }, []);
 
-    const isMobile = width <= 768;
+    // const isMobile = width <= 768;
 
     const getShipmentDetailsStatusClass= (): string => {
         switch(shipmentDetails.CurrentStatus.state) {
@@ -50,7 +50,7 @@ const TrackerCard = ({ shipmentDetails }: TrackerCardProps) => {
         return `rounded-full w-12 h-4 ${result}`
     }
   return (
-    <div className="w-[95%] md:w-[84%] p-5 border border-solid border-#4f5665 rounded-lg">
+    <div className="w-[95%] md:w-[84%] p-5 border border-solid border-var(--primary-border) rounded-lg">
         <div className='flex flex-col md:flex-row justify-between gap-4 md:gap-0'>
             <div className='flex flex-col gap-1 md:gap-2'>
                 <p className='pair-title'>

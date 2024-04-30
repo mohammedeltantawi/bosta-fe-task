@@ -2,14 +2,14 @@
     font-size: 32px;
     line-height: 24px;
     font-weight: bold;
-    color: #4f5665;
+    color: var(--primary-text);
     cursor: pointer;
 }
 
 .navbar-button-text-mobile {
     font-size: 24px;
     font-weight: bold;
-    color: #4f5665;
+    color: var(--primary-text);
     cursor: pointer;
 }
 
@@ -17,6 +17,6 @@
     font-size: 32px;
     line-height: 24px;
     font-weight: bold;
-    color: #e30613;
+    color: var(--red-warning);
     cursor: pointer;
 }

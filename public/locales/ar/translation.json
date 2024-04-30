@@ -61,9 +61,9 @@
         "IN_TRANSIT": "في الطريق",
         "NOT_YET_SHIPPED": "لم يتم تسليم الشحنة",
         "OUT_FOR_DELIVERY": "الشحنة خرجت للتسليم",
-        "WAITING_FOR_CUSTOMER_ACTION": "Waiting for customer action",
+        "WAITING_FOR_CUSTOMER_ACTION": "في إنتظار أمر العميل",
         "DELIVERED": "تم التسليم",
         "CANCELLED": "تم إلغاء الشحنة",
-        "DELIVERED_TO_SENDER": "Delivered to sender"
+        "DELIVERED_TO_SENDER": "تم التسليم للمرسل"
     }
 }
