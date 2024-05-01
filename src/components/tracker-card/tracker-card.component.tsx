@@ -28,7 +28,7 @@ const TrackerCard = ({ shipmentDetails }: TrackerCardProps) => {
 
     const getShipmentDetailsStatusClass= (step?: number): string => {
         switch(shipmentDetails.CurrentStatus.state) {
-            case (TransitEventsState.DELIVERED || TransitEventsState.DELIVERED_TO_SENDER): return "success";
+            case (TransitEventsState.DELIVERED): return "success";
             case (TransitEventsState.CANCELLED): return step===3 ? "grey":  "cancelled";
             default: return step===3 ? "grey": "waiting";
         }
@@ -37,7 +37,7 @@ const TrackerCard = ({ shipmentDetails }: TrackerCardProps) => {
     const getShipmentBarStatusClass= (step?: number): string => {
         let result = "";
         let width = "w-4 h-4 md:w-6 md:h-6";
-        if (shipmentDetails.CurrentStatus.state === TransitEventsState.DELIVERED || shipmentDetails.CurrentStatus.state === TransitEventsState.DELIVERED_TO_SENDER) {
+        if (shipmentDetails.CurrentStatus.state === TransitEventsState.DELIVERED) {
             result = "success-background"
         } else {
             if (step === 4) {

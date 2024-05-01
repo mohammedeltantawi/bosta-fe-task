@@ -6,22 +6,23 @@ import DeliveryTimeCard from "../components/delivery-time-card/delivery-time-car
 import Navbar from "../components/navbar/navbar.component";
 import ShipmentDetails from "../components/shipment-details/shipment-details.component";
 import TrackerCard from "../components/tracker-card/tracker-card.component";
-import { TransitEventsState } from "../enums/transit-events.enum";
-import { ShipmentTrackResponse } from "../models/shipment-track-response.model";
 import { trackShipment } from "../services/shipments";
-
 
 const PackageTracking = () => {
   const { id } = useParams();
   const { i18n } = useTranslation();
-  const { data: shipmentDetails, isLoading } = useQuery(
-    [],
-    () =>
-      trackShipment(id ?? ""),
-  );
+    const { data: shipmentDetails, isLoading, refetch, isFetching } = useQuery(
+      ['shipment-details'],
+      () =>
+        trackShipment(id ?? ""),
+    );
+
+    useEffect(()=> {
+        refetch();
+    },[id]);
 
   return (
-    isLoading || !shipmentDetails ? 
+    isFetching || !shipmentDetails ? 
       (<div>Loading... </div>) : 
       (
         <div className="w-full justify-center items-center flex flex-col gap-10" dir={i18n.language === "ar" ? "rtl": "ltr"}>
@@ -29,7 +30,7 @@ const PackageTracking = () => {
           <TrackerCard shipmentDetails={shipmentDetails}/>
           <div className="w-[95%] md:w-[84%] flex flex-col md:flex-row gap-5">
             <ShipmentDetails shipmentDetails={shipmentDetails}/>
-            <DeliveryTimeCard shipmentDetails={shipmentDetails}/>
+            <DeliveryTimeCard />
           </div>
         </div>
       )

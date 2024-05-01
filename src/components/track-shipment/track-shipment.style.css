@@ -20,6 +20,21 @@
     cursor: pointer;
 }
 
+.navbar-button-text-search {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: bold;
+    color: var(--red-warning);
+    cursor: pointer;
+}
+
+.navbar-button-text-mobile-search {
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--red-warning);
+    cursor: pointer;
+}
+
 .card-title {
     font-size: 18px;
     font-weight: bold;

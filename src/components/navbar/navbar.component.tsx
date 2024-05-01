@@ -53,7 +53,7 @@ const Navbar = () => {
                     </p>
                 </div>
             }
-            <div className='flex gap-4'>
+            <div className='flex gap-4 items-center justify-center'>
                 <TrackShipmentComponent />
                 {
                     isMobile ? (
@@ -61,7 +61,7 @@ const Navbar = () => {
                             <GiHamburgerMenu size={24} />
                         </div>
                     ) : (
-                        <div className='flex flex-row gap-4'>
+                        <div className='flex flex-row gap-4 items-center'>
                             <p className="navbar-button-text">{t('navbar.login')}</p>
                             <p className="language-button" onClick={changeLanguage}>{t('languageButton.text')}</p>
                         </div>
