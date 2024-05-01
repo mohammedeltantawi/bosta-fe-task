@@ -1,0 +1,30 @@
+.track-shipment-container {
+    z-index: 999;
+    position: absolute;
+    background-color: var(--primary-background);
+
+}
+
+.navbar-button-text {
+    font-size: 32px;
+    line-height: 24px;
+    font-weight: bold;
+    color: var(--primary-text);
+    cursor: pointer;
+}
+
+.navbar-button-text-mobile {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--primary-text);
+    cursor: pointer;
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: bold;
+} 
+
+.search-icon-container  {
+    background-color: var(--red-warning);
+}

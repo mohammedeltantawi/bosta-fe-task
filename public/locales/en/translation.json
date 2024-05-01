@@ -65,5 +65,9 @@
         "DELIVERED": "Delivered",
         "CANCELLED": "Cancelled",
         "DELIVERED_TO_SENDER": "Delivered to sender"
+    },
+    "trackShipment": {
+        "title": "Track your shipment",
+        "placeholder": "Tracking number"
     }
 }

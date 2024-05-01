@@ -3,6 +3,7 @@ import bostaAr from '../../assets/svg/bosta-ar.svg';
 import bostaEn from '../../assets/svg/bosta-en.svg';
 import './navbar.style.css'
 import { useTranslation } from 'react-i18next';
+import TrackShipmentComponent from '../track-shipment/track-shipment.component';
 
 const Navbar = () => {
     const { t, i18n } = useTranslation();
@@ -28,40 +29,44 @@ const Navbar = () => {
     }, []);
 
     const isMobile = width <= 768;
-  return (
-    <div className="w-full h-[80px] md:h-[100px] flex flex-row justify-between items-center p-5 md:px-[8%] md:py-10 border-b border-solid ">
-        <div>
-            <img src={i18n.language === "en" ? bostaEn : bostaAr} />
-        </div>
-        {!isMobile &&
-            <div className="flex gap-3 flex-row md:gap-40">
-                <p className='navbar-button-text'>
-                    {t('navbar.main')}
-                </p>
-                <p className='navbar-button-text'>
-                    {t('navbar.prices')}
-                </p>
-                <p className='navbar-button-text'>
-                    {t('navbar.call')}
-                </p>
-            </div>
-        }
-        <div className='flex gap-4'>
-            <p className={isMobile ? 'navbar-button-text-mobile' : 'navbar-button-text'}>
-                {t('navbar.trackShipment')}
-            </p>
-            {
-                isMobile ? (
-                    <div className='border border-solid  w-10 h-10 rounded-lg'>
 
-                    </div>
-                ) : (
-                    <div className='flex flex-row gap-4'>
-                        <p className="navbar-button-text">{t('navbar.login')}</p>
-                        <p className="language-button" onClick={changeLanguage}>{t('languageButton.text')}</p>
-                    </div>
-                )
+    const openSearchComponent = () => {
+
+    }
+  return (
+    <div className='w-full flex flex-col gap-0'>
+        <div className="w-full h-[80px] md:h-[100px] flex flex-row justify-between items-center p-5 md:px-[8%] md:py-10 border-b border-solid ">
+            <div>
+                <img src={i18n.language === "en" ? bostaEn : bostaAr} />
+            </div>
+            {!isMobile &&
+                <div className="flex gap-3 flex-row md:gap-40">
+                    <p className='navbar-button-text'>
+                        {t('navbar.main')}
+                    </p>
+                    <p className='navbar-button-text'>
+                        {t('navbar.prices')}
+                    </p>
+                    <p className='navbar-button-text'>
+                        {t('navbar.call')}
+                    </p>
+                </div>
             }
+            <div className='flex gap-4'>
+                <TrackShipmentComponent />
+                {
+                    isMobile ? (
+                        <div className='border border-solid  w-10 h-10 rounded-lg'>
+
+                        </div>
+                    ) : (
+                        <div className='flex flex-row gap-4'>
+                            <p className="navbar-button-text">{t('navbar.login')}</p>
+                            <p className="language-button" onClick={changeLanguage}>{t('languageButton.text')}</p>
+                        </div>
+                    )
+                }
+            </div>
         </div>
     </div>
   );

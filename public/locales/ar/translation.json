@@ -65,5 +65,9 @@
         "DELIVERED": "تم التسليم",
         "CANCELLED": "تم إلغاء الشحنة",
         "DELIVERED_TO_SENDER": "تم التسليم للمرسل"
+    },
+    "trackShipment": {
+        "title": "تتبع شحنتك",
+        "placeholder": "رقم التتبع"
     }
 }
