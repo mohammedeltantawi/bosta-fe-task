@@ -14,7 +14,6 @@ export const queryClient = new QueryClient({
     },
   },
 });
-const baseURL = `${process.env.API_URL}`;
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement

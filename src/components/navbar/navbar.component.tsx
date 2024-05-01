@@ -31,14 +31,11 @@ const Navbar = () => {
 
     const isMobile = width <= 768;
 
-    const openSearchComponent = () => {
-
-    }
   return (
     <div className='w-full flex flex-col gap-0'>
         <div className="w-full h-[80px] md:h-[100px] flex flex-row justify-between items-center p-5 md:px-[8%] md:py-10 border-b border-solid ">
             <div>
-                <img src={i18n.language === "en" ? bostaEn : bostaAr} />
+                <img src={i18n.language === "en" ? bostaEn : bostaAr} alt={t('navbar.companyName')} />
             </div>
             {!isMobile &&
                 <div className="flex gap-3 flex-row md:gap-40">

@@ -7,7 +7,8 @@
         "login": "تسجيل الدخول",
         "call": "كلم المبيعات",
         "prices": "الأسعار",
-        "main": "الرئيسية"
+        "main": "الرئيسية",
+        "companyName": "بوسطة"
     },
     "deliveryTimeCard": {
         "deliveryAddress": "عنوان التسليم",

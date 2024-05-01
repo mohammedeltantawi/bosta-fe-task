@@ -1,5 +1,4 @@
 import { t } from 'i18next';
-import { useEffect, useState } from 'react';
 import { TransitEventsState } from '../../enums/transit-events.enum';
 import { ShipmentTrackResponse } from '../../models/shipment-track-response.model';
 import { getDateDayDateTime, getDateDMY } from '../../services/global-functions';
@@ -11,20 +10,6 @@ interface TrackerCardProps {
     shipmentDetails: ShipmentTrackResponse;
 }
 const TrackerCard = ({ shipmentDetails }: TrackerCardProps) => {
-
-    const [width, setWidth] = useState<number>(window.innerWidth);
-
-    function handleWindowSizeChange() {
-        setWidth(window.innerWidth);
-    }
-    useEffect(() => {
-        window.addEventListener('resize', handleWindowSizeChange);
-        return () => {
-            window.removeEventListener('resize', handleWindowSizeChange);
-        }
-    }, []);
-
-    // const isMobile = width <= 768;
 
     const getShipmentDetailsStatusClass= (step?: number): string => {
         switch(shipmentDetails.CurrentStatus.state) {

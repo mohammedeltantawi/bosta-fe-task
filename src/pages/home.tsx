@@ -11,7 +11,7 @@ import { trackShipment } from "../services/shipments";
 const PackageTracking = () => {
   const { id } = useParams();
   const { i18n } = useTranslation();
-    const { data: shipmentDetails, isLoading, refetch, isFetching } = useQuery(
+    const { data: shipmentDetails, refetch, isFetching } = useQuery(
       ['shipment-details'],
       () =>
         trackShipment(id ?? ""),
@@ -19,7 +19,7 @@ const PackageTracking = () => {
 
     useEffect(()=> {
         refetch();
-    },[id]);
+    },[id, refetch]);
 
   return (
     isFetching || !shipmentDetails ? 
