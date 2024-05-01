@@ -38,7 +38,7 @@ const Navbar = () => {
                 <img src={i18n.language === "en" ? bostaEn : bostaAr} alt={t('navbar.companyName')} />
             </div>
             {!isMobile &&
-                <div className="flex gap-3 flex-row md:gap-40">
+                <div className="flex gap-3 flex-row md:gap-10">
                     <p className='navbar-button-text'>
                         {t('navbar.main')}
                     </p>
