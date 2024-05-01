@@ -3,7 +3,8 @@
 }
 
 .first-row-text-color {
-    color: var(--primary-border)
+    color: var(--secondary-text);
+    font-weight: 700;
 }
 
 .card-title {

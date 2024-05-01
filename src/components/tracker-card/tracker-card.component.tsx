@@ -40,6 +40,14 @@ const TrackerCard = ({ shipmentDetails }: TrackerCardProps) => {
         }
         return `rounded-full ${result} ${width} items-center justify-center flex`
     }
+
+    const getLatestReason = (): string => {
+        let reason = "";
+        shipmentDetails.TransitEvents.map((event) => {
+            if (event.reason) reason = event.reason
+        })
+        return reason;
+    }
   return (
     <div className="w-[95%] md:w-[84%] py-5 border border-solid rounded-lg">
         <div className='flex flex-col md:flex-row justify-between gap-4 md:gap-0 pb-[30px] px-5'>
@@ -93,7 +101,10 @@ const TrackerCard = ({ shipmentDetails }: TrackerCardProps) => {
             <div className='w-full flex flex-row justify-between'>
                 <p className='status-bar-text'>{t(`transitStatus.${TransitEventsState.TICKET_CREATED}`)}</p>
                 <p className='status-bar-text'>{t(`transitStatus.${TransitEventsState.PACKAGE_RECEIVED}`)}</p>
-                <p className='status-bar-text md:pe-[4%]'>{t(`transitStatus.${TransitEventsState.OUT_FOR_DELIVERY}`)}</p>
+                <div className='flex flex-col gap-1 md:pe-[4%] items-center'>
+                    <p className='status-bar-text'>{t(`transitStatus.${TransitEventsState.OUT_FOR_DELIVERY}`)}</p>
+                    {shipmentDetails.CurrentStatus.state != TransitEventsState.DELIVERED && <p className={`${getShipmentDetailsStatusClass()}`}>{getLatestReason()}</p>}
+                </div>
                 <p className='status-bar-text'>{t(`transitStatus.${TransitEventsState.DELIVERED}`)}</p>
             </div>
         </div>
