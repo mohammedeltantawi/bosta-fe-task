@@ -4,6 +4,7 @@ import bostaEn from '../../assets/svg/bosta-en.svg';
 import './navbar.style.css'
 import { useTranslation } from 'react-i18next';
 import TrackShipmentComponent from '../track-shipment/track-shipment.component';
+import { GiHamburgerMenu } from 'react-icons/gi';
 
 const Navbar = () => {
     const { t, i18n } = useTranslation();
@@ -56,8 +57,8 @@ const Navbar = () => {
                 <TrackShipmentComponent />
                 {
                     isMobile ? (
-                        <div className='border border-solid  w-10 h-10 rounded-lg'>
-
+                        <div className='border border-solid  w-10 h-10 rounded-lg flex justify-center items-center'>
+                            <GiHamburgerMenu size={24} />
                         </div>
                     ) : (
                         <div className='flex flex-row gap-4'>
