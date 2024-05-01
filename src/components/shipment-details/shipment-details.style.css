@@ -1,0 +1,31 @@
+.grey-background {
+    background-color: var(--secondary-background);
+}
+
+.first-row-text-color {
+    color: var(--secondary-text);
+    font-weight: 700;
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: bold;
+} 
+
+.reason-text {
+    font-size: 16px;
+}
+
+.success-color {
+    color: var(--green-success);
+}
+
+
+.cancelled-color {
+    color: var(--red-warning);
+}
+
+
+.waiting-color {
+    color: var(--yellow-waiting);
+}

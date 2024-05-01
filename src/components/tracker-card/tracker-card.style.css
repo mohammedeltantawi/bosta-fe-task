@@ -1,0 +1,58 @@
+.pair-title {
+    font-size: 12;
+    color: var(--secondary-text)
+}
+
+.pair-value {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--primary-text)
+}
+
+.cancelled {
+    color: var(--red-warning);
+}
+
+.success {
+    color: var(--green-success);
+}
+
+.waiting {
+    color: var(--yellow-waiting);
+}
+
+.cancelled-background {
+    background-color: var(--red-warning);
+}
+
+.success-background {
+    background-color: var(--green-success);
+}
+
+.waiting-background {
+    background-color: var(--yellow-waiting);
+}
+
+.status-bar-text {
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--primary-text);
+}
+
+.divider {
+    width: "100%";
+    height: 1px;
+    background-color: var(--primary-border);
+}
+
+.white-background {
+    background-color: var(--primary-background);
+}
+
+.grey-background {
+    background-color: var(--primary-border);
+}
+
+.reverse {
+    transform: rotateY(180deg);
+}

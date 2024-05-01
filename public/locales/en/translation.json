@@ -1,0 +1,74 @@
+{
+    "languageButton": {
+        "text": "ع"
+    },
+    "navbar": {
+        "trackShipment": "Track shipment",
+        "login": "Login",
+        "call": "Call",
+        "prices": "Prices",
+        "main": "Main",
+        "companyName": "Bosta"
+    },
+    "deliveryTimeCard": {
+        "deliveryAddress": "Deliver address",
+        "address": "New Cairo, Egypt",
+        "problemQuestion": "Do you have a problem ?!",
+        "reportButtonTitle": "Report a problem"
+    },
+    "shipmentDetails": {
+        "shipmentDetails": "shipment Details",
+        "branch": "Branch",
+        "date": "Date",
+        "time": "Time",
+        "details": "Details"
+    },
+    "monthNames": {
+        "jan": "January",
+        "feb": "February",
+        "mar": "March",
+        "apr": "April",
+        "may": "May",
+        "june": "June",
+        "july": "July",
+        "aug": "August",
+        "sep": "September",
+        "oct": "October",
+        "nov": "November",
+        "dec": "December"
+    },
+    "dayOfWeek": {
+        "sun": "Sunday",
+        "mon": "Monday",
+        "tues": "Tuesday",
+        "wed": "Wednesday",
+        "thu": "Thursday",
+        "fri": "Friday",
+        "sat": "Saturday"
+    },
+    "clock": {
+        "pm": "pm",
+        "am": "am"
+    },
+    "trackerCard": {
+        "shipmentNumber": "Package number",
+        "lastUpdate": "Last update",
+        "merchantName": "Merchant name",
+        "deliveryDate": "Delivery due date"
+    },
+    "transitStatus": {
+        "TICKET_CREATED": "Ticket created",
+        "PACKAGE_RECEIVED": "Package received",
+        "IN_TRANSIT": "In transit",
+        "NOT_YET_SHIPPED": "Not yet shipped",
+        "OUT_FOR_DELIVERY": "Out for delivery",
+        "WAITING_FOR_CUSTOMER_ACTION": "Waiting for customer action",
+        "DELIVERED": "Delivered",
+        "CANCELLED": "Cancelled",
+        "DELIVERED_TO_SENDER": "Delivered to sender"
+    },
+    "trackShipment": {
+        "title": "Track your shipment",
+        "placeholder": "Tracking number"
+    }
+}

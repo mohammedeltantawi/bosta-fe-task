@@ -1,0 +1,74 @@
+{
+    "languageButton": {
+        "text": "ENG"
+    },
+    "navbar": {
+        "trackShipment": "تتبع شحنتك",
+        "login": "تسجيل الدخول",
+        "call": "كلم المبيعات",
+        "prices": "الأسعار",
+        "main": "الرئيسية",
+        "companyName": "بوسطة"
+    },
+    "deliveryTimeCard": {
+        "deliveryAddress": "عنوان التسليم",
+        "address": "القاهرة الجديدة, القاهرة",
+        "problemQuestion": "هل يوجد مشكلة في شحنتك ؟!",
+        "reportButtonTitle": "إبلاغ عن مشكلة"
+    },
+    "shipmentDetails": {
+        "shipmentDetails": "تفاصيل الشحنة",
+        "branch": "الفرع",
+        "date": "التاريخ",
+        "time": "الوقت",
+        "details": "تفاصيل"
+    },
+    "monthNames": {
+        "jan": "يناير",
+        "feb": "فبراير",
+        "mar": "مارس",
+        "apr": "أبريل",
+        "may": "مايو",
+        "june": "يونيو",
+        "july": "يوليو",
+        "aug": "أغسطس",
+        "sep": "سبتمبر",
+        "oct": "أكتوبر",
+        "nov": "نوفمبر",
+        "dec": "ديسمبر"
+    },
+    "dayOfWeek": {
+        "sun": "الأحد",
+        "mon": "الاثنين",
+        "tues": "الثلاثاء",
+        "wed": "الأربعاء",
+        "thu": "الخميس",
+        "fri": "الجمعة",
+        "sat": "السبت"
+    },
+    "clock": {
+        "pm": "pm",
+        "am": "am"
+    },
+    "trackerCard": {
+        "shipmentNumber": "رقم الشحنة",
+        "lastUpdate": "آخر تحديث",
+        "merchantName": "اسم التاجر",
+        "deliveryDate": "موعد التسليم خلال"
+    },
+    "transitStatus": {
+        "TICKET_CREATED": "تم إنشاء الشحنة",
+        "PACKAGE_RECEIVED": "تم إستلام الشحنة من التاجر",
+        "IN_TRANSIT": "في الطريق",
+        "NOT_YET_SHIPPED": "لم يتم تسليم الشحنة",
+        "OUT_FOR_DELIVERY": "الشحنة خرجت للتسليم",
+        "WAITING_FOR_CUSTOMER_ACTION": "في إنتظار أمر العميل",
+        "DELIVERED": "تم التسليم",
+        "CANCELLED": "تم إلغاء الشحنة",
+        "DELIVERED_TO_SENDER": "تم التسليم للمرسل"
+    },
+    "trackShipment": {
+        "title": "تتبع شحنتك",
+        "placeholder": "رقم التتبع"
+    }
+}

@@ -1,0 +1,22 @@
+.navbar-button-text {
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: bold;
+    color: var(--primary-text);
+    cursor: pointer;
+}
+
+.navbar-button-text-mobile {
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--primary-text);
+    cursor: pointer;
+}
+
+.language-button {
+    font-size: 21px;
+    line-height: 24px;
+    font-weight: bold;
+    color: var(--red-warning);
+    cursor: pointer;
+}

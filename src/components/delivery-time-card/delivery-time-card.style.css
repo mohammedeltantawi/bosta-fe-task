@@ -1,0 +1,18 @@
+.red-background {
+    background-color: var(--red-warning);
+}
+
+.grey-background {
+    background-color: var(--secondary-background);
+
+}
+
+.report-text {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: bold;
+}
