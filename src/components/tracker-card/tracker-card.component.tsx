@@ -4,13 +4,13 @@ import { ShipmentTrackResponse } from '../../models/shipment-track-response.mode
 import { getDateDayDateTime, getDateDMY } from '../../services/global-functions';
 import "./tracker-card.style.css";
 import { FaTruck, FaCheck, FaCheckToSlot  } from "react-icons/fa6";
-import i18n from '../../i18n';
+import { useTranslation } from 'react-i18next';
 
 interface TrackerCardProps {
     shipmentDetails: ShipmentTrackResponse;
 }
 const TrackerCard = ({ shipmentDetails }: TrackerCardProps) => {
-
+    const { i18n } = useTranslation();
     const getShipmentDetailsStatusClass= (step?: number): string => {
         switch(shipmentDetails.CurrentStatus.state) {
             case (TransitEventsState.DELIVERED): return "success";
