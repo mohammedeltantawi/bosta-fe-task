@@ -14,7 +14,7 @@
 }
 
 .success {
-    color: var(--green-succes);
+    color: var(--green-success);
 }
 
 .waiting {
@@ -26,7 +26,7 @@
 }
 
 .success-background {
-    background-color: var(--green-succes);
+    background-color: var(--green-success);
 }
 
 .waiting-background {
