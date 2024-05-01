@@ -7,6 +7,7 @@ import Navbar from "../components/navbar/navbar.component";
 import ShipmentDetails from "../components/shipment-details/shipment-details.component";
 import TrackerCard from "../components/tracker-card/tracker-card.component";
 import { trackShipment } from "../services/shipments";
+import CircularProgress from '@mui/material/CircularProgress';
 
 const PackageTracking = () => {
   const { id } = useParams();
@@ -23,7 +24,7 @@ const PackageTracking = () => {
 
   return (
     isFetching || !shipmentDetails ? 
-      (<div>Loading... </div>) : 
+      (<div className="flex items-center justify-center w-full h-full"><CircularProgress color="error" size={100} /> </div>) : 
       (
         <div className="w-full justify-center items-center flex flex-col gap-10" dir={i18n.language === "ar" ? "rtl": "ltr"}>
           <Navbar />

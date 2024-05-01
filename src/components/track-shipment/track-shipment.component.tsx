@@ -1,11 +1,11 @@
 import { t } from "i18next";
 import { useEffect, useState } from "react";
-import i18n from "../../i18n";
 import "./track-shipment.style.css"
 import { CiSearch } from "react-icons/ci";
 import type { ChangeEvent } from 'react';
 import { useNavigate } from "react-router-dom";
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa6";
+import { useTranslation } from "react-i18next";
 
 interface TrackShipmentComponentProps {
     isSearchOpen: boolean;
@@ -13,6 +13,7 @@ interface TrackShipmentComponentProps {
     setSideBarOpen: (value: boolean) => void;
 }
 const TrackShipmentComponent = ({isSearchOpen, setSearchOpen, setSideBarOpen}: TrackShipmentComponentProps) => {
+    const { i18n } = useTranslation()
     const navigate = useNavigate();
     
     const [searchTerm, setSearchTerm] = useState<string>("");
