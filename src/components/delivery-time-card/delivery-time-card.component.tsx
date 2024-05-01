@@ -1,6 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import './delivery-time-card.style.css';
 import { FaQuestion } from "react-icons/fa6";
+import i18n from '../../i18n';
 
 const DeliveryTimeCard = () => {
     const { t } = useTranslation();
@@ -11,7 +12,7 @@ const DeliveryTimeCard = () => {
             <p>{t('deliveryTimeCard.address')}</p>
         </div>
         <div className='flex border border-solid rounded-lg p-5 h-[150px] items-center gap-10'>
-            <FaQuestion size={100} color="#E30613"/>
+            <FaQuestion className={i18n.language ==="en" ? "reverse": ""} size={100} color="#E30613"/>
             <div className='flex flex-col gap-2 w-2/3 items-center'>
                 <p className="report-text">{t('deliveryTimeCard.problemQuestion')}</p>
                 <div className='h-[50px] w-full flex cursor-pointer rounded-lg red-background items-center justify-center'>

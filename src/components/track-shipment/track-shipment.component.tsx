@@ -7,17 +7,25 @@ import type { ChangeEvent } from 'react';
 import { useNavigate } from "react-router-dom";
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa6";
 
-const TrackShipmentComponent = () => {
+interface TrackShipmentComponentProps {
+    isSearchOpen: boolean;
+    setSearchOpen: (value: boolean) => void;
+    setSideBarOpen: (value: boolean) => void;
+}
+const TrackShipmentComponent = ({isSearchOpen, setSearchOpen, setSideBarOpen}: TrackShipmentComponentProps) => {
     const navigate = useNavigate();
     
     const [searchTerm, setSearchTerm] = useState<string>("");
-    const [isSearchOpen, setSearchOpen] = useState<boolean>(false);
     const handleSearch = (e: ChangeEvent<HTMLInputElement>) => {
         setSearchTerm(e.target.value);
     }
 
     const toggleSearchOpen= () => {
+        if (!isSearchOpen) {
+            setSideBarOpen(false);
+        }
         setSearchOpen(!isSearchOpen);
+
     }
     const toggleSearch = () => {
         navigate(`/shipment/${searchTerm}`);

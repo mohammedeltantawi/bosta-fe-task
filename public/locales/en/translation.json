@@ -12,7 +12,7 @@
     },
     "deliveryTimeCard": {
         "deliveryAddress": "Deliver address",
-        "address": "Address",
+        "address": "New Cairo, Egypt",
         "problemQuestion": "Do you have a problem ?!",
         "reportButtonTitle": "Report a problem"
     },

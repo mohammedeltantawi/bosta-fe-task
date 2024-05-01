@@ -8,6 +8,8 @@ import { GiHamburgerMenu } from 'react-icons/gi';
 
 const Navbar = () => {
     const { t, i18n } = useTranslation();
+    const [sideBarOpen, setSideBarOpen] = useState<boolean>(false);
+    const [isSearchOpen, setSearchOpen] = useState<boolean>(false);
 
     const changeLanguage = () => {
         if (i18n.language === "en"){
@@ -31,6 +33,12 @@ const Navbar = () => {
 
     const isMobile = width <= 768;
 
+    const toggleSideBar = () =>{
+        if(!sideBarOpen) {
+            setSearchOpen(false);
+        }
+        setSideBarOpen(!sideBarOpen);
+    }
   return (
     <div className='w-full flex flex-col gap-0'>
         <div className="w-full h-[80px] md:h-[100px] flex flex-row justify-between items-center p-5 md:px-[8%] md:py-10 border-b border-solid ">
@@ -51,13 +59,27 @@ const Navbar = () => {
                 </div>
             }
             <div className='flex gap-4 items-center justify-center'>
-                <TrackShipmentComponent />
+                <TrackShipmentComponent isSearchOpen={isSearchOpen} setSearchOpen={setSearchOpen} setSideBarOpen={setSideBarOpen} />
                 {
                     isMobile ? (
-                        <div className="flex flex-col">
-                            <div className='border border-solid  w-10 h-10 rounded-lg flex justify-center items-center'>
+                        <div className="flex flex-col items-end">
+                            <div onClick={toggleSideBar} className='border border-solid  w-10 h-10 rounded-lg flex justify-center items-center cursor-pointer'>
                                 <GiHamburgerMenu size={24} />
                             </div>
+                            {!!sideBarOpen && 
+                            <div className="track-shipment-container flex flex-col p-5 md:p-10 border border-s rounded-lg w-[40%] top-[80px] gap-5 border-t-0 justify-center">
+                                <p className='navbar-button-text'>
+                                    {t('navbar.main')}
+                                </p>
+                                <p className='navbar-button-text'>
+                                    {t('navbar.prices')}
+                                </p>
+                                <p className='navbar-button-text'>
+                                    {t('navbar.call')}
+                                </p>
+                                <p className="navbar-button-text">{t('navbar.login')}</p>
+                                <p className="language-button" onClick={changeLanguage}>{t('languageButton.text')}</p>
+                            </div>}
                         </div>
                     ) : (
                         <div className='flex flex-row gap-4 items-center'>
