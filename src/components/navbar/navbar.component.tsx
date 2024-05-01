@@ -54,8 +54,10 @@ const Navbar = () => {
                 <TrackShipmentComponent />
                 {
                     isMobile ? (
-                        <div className='border border-solid  w-10 h-10 rounded-lg flex justify-center items-center'>
-                            <GiHamburgerMenu size={24} />
+                        <div className="flex flex-col">
+                            <div className='border border-solid  w-10 h-10 rounded-lg flex justify-center items-center'>
+                                <GiHamburgerMenu size={24} />
+                            </div>
                         </div>
                     ) : (
                         <div className='flex flex-row gap-4 items-center'>

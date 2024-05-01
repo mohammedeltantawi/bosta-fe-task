@@ -36,7 +36,7 @@ const TrackShipmentComponent = () => {
 
     const isMobile = width <= 768;
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col items-end">
         {isSearchOpen ? (
             <div onClick={toggleSearchOpen}  className="border border-solid items-center justify-center flex flex-row gap-2 w-full h-[75px] md:h-[90px] top-[10px] md:top-[20px] p-5 rounded-lg border-b-0 rounded-bl-none rounded-br-none">
                 <p className={isMobile ? 'navbar-button-text-mobile-search' : 'navbar-button-text-search'}>
