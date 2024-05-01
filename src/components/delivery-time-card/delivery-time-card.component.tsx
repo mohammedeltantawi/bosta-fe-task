@@ -1,10 +1,9 @@
 import { useTranslation } from 'react-i18next';
 import './delivery-time-card.style.css';
 import { FaQuestion } from "react-icons/fa6";
-import i18n from '../../i18n';
 
 const DeliveryTimeCard = () => {
-    const { t } = useTranslation();
+    const { t, i18n } = useTranslation();
   return (
     <div className="flex flex-col gap-4 w-full md:w-1/3">
         <p className='card-title'>{t('deliveryTimeCard.deliveryAddress')}</p>
