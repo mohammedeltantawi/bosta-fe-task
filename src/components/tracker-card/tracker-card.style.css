@@ -44,3 +44,15 @@
     height: 1px;
     background-color: var(--primary-border);
 }
+
+.white-background {
+    background-color: var(--primary-background);
+}
+
+.grey-background {
+    background-color: var(--primary-border);
+}
+
+.reverse {
+    transform: rotateY(180deg);
+}
